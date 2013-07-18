@@ -2,5 +2,24 @@
 layout: default
 title: Leaflet TopoJSON Example
 ---
-
+<p id="filters"><label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="abrasives" checked>
+  Abrasives
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="welding">
+  Welding
+</label>
+ | 
+<label class="select">
+Detail Level
+<select id="geoLevel">
+  <option value='nation'>Nation</option>
+  <option value='state'>State</option>
+  <option value='county'>County</option>
+</select>
+</label>
+ | 
+<input type="button" id="refresh" value='Refresh Map' />
+</p>
 <div id="map">Map loading....</div>
