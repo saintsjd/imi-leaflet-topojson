@@ -22,7 +22,7 @@ var geojson_county = topojson.feature( topojson_county, topojson_county.objects.
 
 function updateMap(){
 
-	var url = '/js/demand-' + level + "-" + product + ".json";
+	var url = 'js/demand-' + level + "-" + product + ".json";
 	$.getJSON(url,function(data){
 
 	    // helper function from D3 maps the data set to html colors
